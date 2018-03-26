@@ -50,6 +50,7 @@ ggplot(iris,aes(Species, Sepal.Length))+
   geom_bar(stat = "summary",fun.y="mean", fill="blue", col="black")+
   geom_point()
 
+
 myPlot<-ggplot(iris,aes(Species, Sepal.Length))+
   geom_bar(stat = "summary",fun.y="mean", fill="blue", col="black")+
   geom_point(position=position_jitter(0.2),size=3, shape=21)
